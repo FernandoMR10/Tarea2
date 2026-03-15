@@ -840,7 +840,7 @@ button {
     /* ERROR 14: Los proyectos no se muestran en columnas, solo apilados
        PISTA: Falta definir cómo se distribuyen las columnas en el grid */
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-xl);
 }
 
@@ -1034,7 +1034,7 @@ button {
 .contact__card {
     /* ERROR 18: La card de contacto no tiene el fondo degradado
        PISTA: Falta la propiedad background con el gradiente primario */
-    border-radius: var(--border-radius-xl);
+    background: var(--gradient-primary);
     padding: var(--spacing-2xl);
     text-align: center;
 }
@@ -1105,6 +1105,7 @@ button {
     background: var(--color-bg-tertiary);
     /* ERROR 17: Los iconos de redes sociales son cuadrados en vez de círculos
        PISTA: Falta una propiedad de borde para hacer elementos circulares */
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
